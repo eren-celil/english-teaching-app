@@ -5,10 +5,11 @@
 
 body {
         box-sizing: border-box;
+        background-color: rgb(211, 176, 129);
 }
 
 .container {
-        height: 100vh;
+        height: 50vh;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -32,8 +33,8 @@ body {
         width: 40%;
         border: none;
         background: #12c2e9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         cursor: pointer;
         border-radius: 100px;
 }
@@ -67,3 +68,73 @@ textarea {
       .hidden {
         display: none;
       }
+      .rickhead img{
+        width: 230px;
+      }
+      .chat{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+      }
+        .msg-list {
+        width: 100%;
+    }
+        .messenger-container {
+        top: 50px;
+        padding: 8px 15px 8px 13px;
+        margin: 0 0 25px 35px;
+        float: left;
+        max-width: 82%;
+        background: #f2f2f2;
+        border-radius: 10px;
+        min-width: 20%;
+        position: relative; box-sizing: border-box;
+        box-shadow: 7px 10px 6px -5px #BBC0C7;
+    }
+    .messenger-container p {
+       color: #3D3D3D;
+        font-size: 18px;
+        margin-bottom: 6px;
+        line-height: 18px;
+        word-wrap: break-word; margin: 0;
+    }
+    .sender .messenger-container {
+        top: 230px;
+        float: right;
+        margin-right: 35px;
+        width: auto;
+        background: #D5DBFF;
+        margin-left: 0px;
+        padding: 8px 15px 8px 13px;
+    }
+    .clear {
+        clear:both;
+        width: 100%;
+        padding: 0px !important;
+        margin: 0px;
+        height:0px;
+    }
+       .messenger-container::before {
+           width: 0px;
+           height: 0px;
+           border-top: 8px solid transparent;
+           border-bottom: 8px solid transparent; 
+
+           border-right:15px solid #f2f2f2; 
+           content: "";
+           position: absolute;
+           top: 9px;
+           left: -15px;
+       }
+    .sender .messenger-container::before {
+          width: 0px;
+          height: 0px;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-left: 15px solid #D5DBFF;
+          content: "";
+          position: absolute;
+          top: 9px;
+          left: 99%;border-right: none;
+   }
