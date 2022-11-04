@@ -21,7 +21,7 @@ body {
 .input {
         height: 20%;
         width: 40%;
-        font-size: 28px;
+        font-size: 24px;
         border-color: blue;
         margin: 10px;
         
@@ -35,6 +35,7 @@ body {
 background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         cursor: pointer;
+        border-radius: 100px;
 }
 
 textarea {
@@ -45,6 +46,24 @@ textarea {
         border:0;
         box-shadow:4px 4px 10px rgba(0,0,0,0.06);
         height:50%;
-        font-size: 12px;
         margin: 10px;
+      }
+
+      .popup {
+        position: absolute;
+        width:50%;
+        resize: vertical;
+        padding:15px;
+        border-radius:15px;
+        border:0;
+        box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+        height:50%;
+        margin: 10px;
+        background-color: black;
+        color: white;
+        font-size: 28px;
+      }
+
+      .hidden {
+        display: none;
       }
