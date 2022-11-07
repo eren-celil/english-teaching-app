@@ -1,0 +1,59 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        box-sizing: border-box;
+}
+
+.container {
+        background-image: url(./Rick-Pngs/wallpaper4.png);
+        background-position: center;
+        background-size: contain;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 40px;
+        color: #FFFFFF;
+        
+text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+color: #FFFFFF;
+
+}
+
+#button {
+        height: 10%;
+        width: 20%;
+        border-radius: 20%;
+        border: none;
+        background-color: #ff2d9681;
+        font-size: larger;
+        font-weight: 700;
+        margin: 10px;
+        position: absolute;
+        top: 0;
+}
+
+textarea {
+        font-size: 32px;
+        height: 50px;
+        width: 300px;
+}
+
+.end {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        background-image: url(./Rick-Pngs/wallpaper5.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;       
+}
+
+.hidden {
+        display: none;
+}
